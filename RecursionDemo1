@@ -1,0 +1,20 @@
+//Tail Trcursion
+
+
+public class RecursionDemo1 {
+
+    void fun(int num){
+        if(num==0)
+            return;
+        System.out.println(num);
+        fun(--num);
+    }
+    public static void main(String[]args){
+        RecursionDemo1 obj = new RecursionDemo1();
+        obj.fun(5);
+
+    }
+
+
+
+}
