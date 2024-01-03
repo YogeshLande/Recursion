@@ -1,0 +1,21 @@
+
+
+public class RecursionDemo3{
+
+    int fun(int num){
+        if(num==1)
+            return 1;
+        return fun(--num)+3;
+    }
+    public static void main(String[]args){
+        RecursionDemo3 obj = new RecursionDemo3();
+        int ret = obj.fun(2);
+
+        System.out.println(ret);
+
+    }
+
+
+
+}
+
