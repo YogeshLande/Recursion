@@ -1,0 +1,19 @@
+// Non Tail Recursion
+public class RecursionDemo2{
+
+    int fun(int num){
+        if(num==0)
+            return 1;
+        return 5+fun(--num);
+    }
+    public static void main(String[]args){
+        RecursionDemo2 obj = new RecursionDemo2();
+        int ret = obj.fun(2);
+
+        System.out.println(ret);
+
+    }
+
+
+
+}
